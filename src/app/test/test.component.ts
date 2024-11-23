@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './test.component.scss'
 })
 export class TestComponent {
-
+  textInterpolation = 'This is text interpolation.';
 }
