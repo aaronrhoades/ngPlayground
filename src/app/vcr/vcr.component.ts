@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, ElementRef, inject, ViewChild, ViewContainerRef } from '@angular/core';
-import { TemplateRefComponent } from '../template-ref/template-ref.component';
 import { TestComponent } from '../test/test.component';
 
 @Component({
@@ -17,10 +16,8 @@ export class VCRComponent implements AfterViewInit {
   ngAfterViewInit() {
     console.log('vcr', this.vcr);
     console.log('viewChildTest', this.viewChildTest);
-
     console.log(this.viewChildTest.nativeElement.innerText);
 
-    this.vcr.createComponent(TemplateRefComponent);
     this.vcr.createComponent(TestComponent);
 
   }
