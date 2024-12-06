@@ -1,9 +1,9 @@
 <p>template-ref works!</p>
 <ng-container *ngTemplateOutlet="theActualTemplate; context: context">
     Template not rendered
-  </ng-container>
- 
-  <ng-template #theActualTemplate let-templateTitle="title" let-action="someMethod">
-    <h2>{{templateTitle}}</h2>
-    <button (click)="action(templateTitle)">test</button>
-  </ng-template>
+</ng-container>
+
+<ng-template #theActualTemplate let-templateTitle="title" let-action="someMethod">
+  <h2>{{templateTitle}}</h2>
+  <button (click)="action(templateTitle)">test</button>
+</ng-template>
